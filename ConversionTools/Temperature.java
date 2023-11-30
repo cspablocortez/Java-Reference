@@ -1,15 +1,25 @@
 package ConversionTools;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Temperature {
-    // Select input file:
-       // -- celsius.in
-       // -- fahrenheit.in
-
-       System.out.println("Select input file: ");
-       // print a tree representation of the files inside a directory
-
-    // Temperatures converted and saved to Temperates.out
 
 
+    public static void main(String[] args) {
+        try {
+            BufferedReader r = new BufferedReader(new FileReader("fahrenheit.in"));
+            PrintWriter pw = new PrintWriter("conversions.out");
 
+            String line;
+            while ((line = r.readLine()) != null) {
+                double temp = Double.parseDouble(line);
+                
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
