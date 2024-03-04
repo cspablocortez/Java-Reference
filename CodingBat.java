@@ -12,5 +12,5 @@ public class CodingBat {
           }
         }
         return true;
-      }
+    }
 }
